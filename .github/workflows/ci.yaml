@@ -43,6 +43,10 @@ jobs:
         with:
           python-version: '3.12'  # Specify your Python version
 
+      - name: Install Heroku CLI
+        run: |
+          curl https://cli-assets.heroku.com/install.sh | sh
+
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
